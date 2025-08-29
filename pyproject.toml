@@ -1,0 +1,25 @@
+[project]
+name = "claude-token-count"
+description = "CLI to return number of Claude tokens in your text"
+readme = { file = "readme.md", content-type = "text/markdown" }
+authors = [{ name = "Sergey Karayev" }]
+license = "Apache-2.0"
+version = "0.1.0"
+requires-python = ">=3.8"
+dependencies = ["click>=8.1"]
+
+[project.urls]
+Homepage = "https://github.com/sergeyk/claude-token-count"
+Issues = "https://github.com/sergeyk/claude-token-count/issues"
+CI = "https://github.com/sergeyk/claude-token-count/actions"
+Changelog = "https://github.com/sergeyk/claude-token-count/releases"
+
+[project.scripts]
+claude-token-count = "claude_token_count.main:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 120
